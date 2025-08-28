@@ -1,0 +1,2 @@
+local cg=game:GetService("CoreGui") cg.ChildAdded:Connect(function(c)if c.Name=="DevConsoleMaster"then task.wait(.3)c.DescendantAdded:Connect(function(d)if d:IsA("TextLabel")then d.RichText=true end end)for _,d in ipairs(c:GetDescendants())do if d:IsA("TextLabel")then d.RichText=true end end end end) if cg:FindFirstChild("DevConsoleMaster")then local d=cg.DevConsoleMaster;d.DescendantAdded:Connect(function(x)if x:IsA("TextLabel")then x.RichText=true end end)for _,x in ipairs(d:GetDescendants())do if x:IsA("TextLabel")then x.RichText=true end end end
+
